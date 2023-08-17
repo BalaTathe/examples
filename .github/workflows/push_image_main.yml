@@ -20,7 +20,7 @@ jobs:
           password: ${{ secrets.DOCKER_PASS }}
 
       - name: Build the Docker image
-        run: docker build . --file Dockerfile --tag ${{ secrets.DOCKER_USER }}/assignment-1
+        run: docker build . --file Dockerfile --tag ${{ secrets.DOCKER_USER }}/assignment-2
 
       - name: Docker Push
-        run: docker push ${{ secrets.DOCKER_USER }}/assignment-1
+        run: docker push ${{ secrets.DOCKER_USER }}/assignment-2
